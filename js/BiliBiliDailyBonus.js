@@ -443,6 +443,8 @@ async function share(aid, cid, short_link) {
 }
 
 async function coin() {
+	$.log("- 跳过投币")
+	return
 	if (config.coins.num >= 50) {
 		$.log(`- 今日已完成 记录于${config.coins.time}`)
 		return
